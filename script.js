@@ -4,7 +4,7 @@ function sendToWhatsApp(e) {
   let phone = document.getElementById("phone").value;
   let message = document.getElementById("message").value;
 
-  let whatsappUrl = "https://wa.me/918825114380?text=" 
+  let whatsappUrl = "https://wa.me/918827306548?text=" 
       + "Hello, my name is " + name + 
       ". My phone is " + phone + 
       ". Message: " + message;
