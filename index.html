@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tru Vision - CCTV & Surveillance</title>
-  <script src="script.js"></script>
   <style>
     body {
       margin: 0;
@@ -89,6 +88,7 @@
     }
   </style>
 </head>
+<script src="script.js"></script>
 <body>
 
   <header>
@@ -128,12 +128,13 @@
     <a href="tel:834055098">834055098</a>
 
     <h2>📩 Request a Callback</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="tel" name="phone" placeholder="Your Phone" required>
-      <textarea name="message" placeholder="Your Message"></textarea>
-      <button type="submit">Submit</button>
+    <form onsubmit="sendToWhatsApp(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Your Phone" required>
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
     </form>
+
   </section>
 
   <footer>
