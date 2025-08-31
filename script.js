@@ -5,14 +5,21 @@ function sendToWhatsApp(e) {
   let phone = document.getElementById("phone").value;
   let message = document.getElementById("message").value;
 
-  let whatsappUrl = "https://wa.me/918827306548?text=" 
+  console.log("🚀 sendToWhatsApp triggered!");
+  console.log("Captured Data →", { name, phone, message });
+
+  let whatsappUrl = "https://wa.me/918825114380?text=" 
       + "Hello, my name is " + name 
       + ". My phone is " + phone 
       + ". Message: " + message;
 
+  console.log("Generated WhatsApp URL:", whatsappUrl);
+
   // Redirect user to Thank You page
   window.location.href = "thankyou.html";
 
-  // Also open WhatsApp chat
+  // Open WhatsApp chat
   window.open(whatsappUrl, "_blank");
+
+  console.log("✅ Redirecting to thankyou.html and opening WhatsApp...");
 }
